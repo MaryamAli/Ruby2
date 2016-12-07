@@ -7,6 +7,10 @@ class Cat
   attr_writer :name
   
   def initialize(color, breed)
+    # initialize method runs when new instance of a class is created
+        #this one expects 2 arguments: color & breed
+        #every new Cat must have these
+        
     # @ = instance variables, not local variables
     #will be avail to other methods inside of class Cat
     #local variables (w/o @) only exisit inside the method they are in
