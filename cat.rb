@@ -55,6 +55,15 @@ class Dog < Pet
   end
 end
 
+class Fish < Pet
+  def speak
+    return nil
+  end
+end
+
+
+
+
 
 kitty = Cat.new("grey", "Persian")
 puts "Let's inspect our new cat:"
@@ -103,5 +112,7 @@ puts "No? Please input another nickname:"
 puppy.nickname2 = gets.chomp
 puts "Ok, doggo\'s new nickname is #{puppy.nickname2}."
 
-
+nemo = Fish.new("orange", "Clown Fish")
+nemo.speak
+puts "Hi, this is Nemo, the #{nemo.color} #{nemo.breed}."
 
